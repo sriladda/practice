@@ -1,0 +1,3 @@
+ - The biggest advantage of BST can be thought of as, fast insertion into as sorted array. As while search in sorted array is O(log n), insert is O(n).
+
+
