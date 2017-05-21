@@ -1,3 +1,12 @@
- - The biggest advantage of BST can be thought of as, fast insertion into as sorted array. As while search in sorted array is O(log n), insert is O(n).
+what is Binary Tree?
+-- Any tree, in which, every node has at the max 2 leaves only.
+what is Binary Search Tree?
+-- Any Binary Tree, in which, all the nodes left to the root are less than root and all the nodes right to the node are greater than root.
 
+ok now, why BST??
+-- because insert and delete are also of order(log n), unlike sorted arrays where insert and delete are O(n)
+-- in linked list insert and delete are O(1) but search is order(n)
 
+// Problems solved on trees
+1. Insert in tree and print using inorder, insert.c
+2. BFS, bfs.c and queue.c
