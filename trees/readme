@@ -10,3 +10,5 @@ ok now, why BST??
 // Problems solved on trees
 1. Insert in tree and print using inorder, insert.c
 2. BFS, bfs.c and queue.c
+3. Inorder successor and predecessor, successor_predecessor.c
+4. Delete node from bst, delete_node.c
