@@ -12,3 +12,4 @@ ok now, why BST??
 2. BFS, bfs.c and queue.c
 3. Inorder successor and predecessor, successor_predecessor.c
 4. Delete node from bst, delete_node.c
+5. iterative inorder and preorder using stack
