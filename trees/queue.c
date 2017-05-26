@@ -34,18 +34,26 @@ int is_full()
 //pre-increment queue index
 void enqueue(void* data)
 {
+    size++;
     if(is_full()) 
     {
         printf("%s: Queue is full\n", __FUNCTION__);
 	return;
     }
     enqueue_point++;
+    //printf("%s: enqueue_point = %d\n", __FUNCTION__, enqueue_point);
     queue[enqueue_point] = data;
+}
+
+int queue_size() 
+{
+    return size;
 }
 
 //post-decrement queue index
 void* dequeue()
 {
+    size--;
     if(is_empty())
     {
         printf("%s: Queue is empty\n", __FUNCTION__);

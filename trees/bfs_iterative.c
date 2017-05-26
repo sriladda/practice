@@ -22,15 +22,24 @@ node * create_node(int data) {
 
 void bfs(node *root)
 {
-     if(root == NULL)
+     int level_nodes;
+     enqueue(root);
+     while (queue_size() >= 0)
      {
-         return;
+         level_nodes = queue_size();
+         while(level_nodes >= 0)
+         {
+             root = (node *) dequeue();
+             printf("%d ", root->data);
+
+             if (root->left)
+                 enqueue(root->left);
+             if (root->right)
+                 enqueue(root->right);
+             level_nodes--;
+         }
+         printf("\n");
      }
-     enqueue(root->left);
-     enqueue(root->right);
-     printf("%d ", root->data);
-     root = (node *) dequeue();
-     bfs(root);
 }
 
 node *insert(node *root, int data) {
@@ -72,6 +81,8 @@ int main()
     root->right       = create_node(3);
     root->left->left  = create_node(4);
     root->left->right = create_node(5);
+    root->right->left  = create_node(6);
+    root->right->right = create_node(7);
  
     printf("Expected: 1 2 3 4 5 \n");
     printf("Level Order traversal of binary tree is \n");

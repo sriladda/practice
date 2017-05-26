@@ -8,8 +8,32 @@ ok now, why BST??
 -- in linked list insert and delete are O(1) but search is order(n)
 
 // Problems solved on trees
-1. Insert in tree and print using inorder, insert.c
-2. BFS, bfs.c and queue.c
-3. Inorder successor and predecessor, successor_predecessor.c
-4. Delete node from bst, delete_node.c
-5. iterative inorder and preorder using stack
+1. Insert in tree and print using inorder
+     insert.c
+
+2. BFS or level order traversal 
+     gcc bfs.c and queue.c
+
+3. Inorder successor and predecessor
+     successor_predecessor.c
+
+4. Delete node from bst
+     delete_node.c
+
+5. iterative inorder and preorder using stack, 
+     cd iterative_DFS
+     gcc inorder.c stack.c
+     gcc preorder.c stack.c
+     gcc postorder.c
+   Did not use my stack for post order, as 2 stacks are needed and my stack needs enhancements for multi stack
+
+6. print all possible root to leaf paths
+     print_all_root_to_leaf.c
+
+7. print each level of bfs in new level and bfs in iterative
+     gcc bfs_iterative.c queue.c       
+
+8. maxDepth or maxHeight of binary tree
+     max_height.c
+9. Are two given trees the same?
+     is_same_tree.c

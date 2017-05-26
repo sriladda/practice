@@ -1,0 +1,5 @@
+# ssh without entering the password and execute commands in destination machine.
+ssh -i ~/.ssh/id_rsa ubuntu@192.168.56.11 echo ok
+
+# scp without password
+sshpass -p "ubuntu" scp -o IdentitiesOnly=yes -r /home/sri/work/test/ ubuntu@192.168.56.11:~
